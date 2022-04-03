@@ -1,5 +1,3 @@
-let items;
-
 const etsyAPI = "r645z2pvk8ptxcr6dz8y0oqp";
 
 let itemDB = [];
