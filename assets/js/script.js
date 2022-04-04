@@ -16,7 +16,7 @@ const getDB = async () => {
   itemDB = [];
   try {
     const response = await fetch(
-      `https://openapi.etsy.com/v2/shops/BentlyskunkworksShop/listings/active?method=GET&api_key=${etsyAPI}&fields=title,price,url&limit=100&includes=MainImage`
+      `https://cors-anywhere.herokuapp.com/https://openapi.etsy.com/v2/shops/BentlyskunkworksShop/listings/active?method=GET&api_key=${etsyAPI}&fields=title,price,url&limit=100&includes=MainImage`
     );
 
     const data = await response.json();
