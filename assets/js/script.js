@@ -14,21 +14,14 @@ const getDB = async () => {
   let data = "<?php echo $data; ?>";
   let data_parsed = JSON.parse(data);
   itemDB = [];
-  try {
-    const response = await fetch(
-      `https://openapi.etsy.com/v2/shops/BentlyskunkworksShop/listings/active?method=GET&api_key=${etsyAPI}&fields=title,price,url&limit=100&includes=MainImage`
-    );
 
-    const itemArray = data_parsed.results;
-    for (item of itemArray) {
-      const { title, url, sku, MainImage, price } = item;
-      itemDB.push(new Item(title, url, sku, MainImage.url_170x135, price));
-    }
-    populateFeatured(itemDB);
-    return itemDB;
-  } catch (error) {
-    console.log(error);
+  const itemArray = data_parsed.results;
+  for (item of itemArray) {
+    const { title, url, sku, MainImage, price } = item;
+    itemDB.push(new Item(title, url, sku, MainImage.url_170x135, price));
   }
+  populateFeatured(itemDB);
+  return itemDB;
 };
 
 // .then((data) => {
