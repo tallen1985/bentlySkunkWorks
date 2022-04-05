@@ -1,5 +1,3 @@
-const etsyAPI = "r645z2pvk8ptxcr6dz8y0oqp";
-
 let itemDB = [];
 
 class Item {
@@ -13,14 +11,15 @@ class Item {
 }
 
 const getDB = async () => {
+  let data = "<?php echo $data; ?>";
+  let data_parsed = JSON.parse(data);
   itemDB = [];
   try {
     const response = await fetch(
-      `https://cors-anywhere.herokuapp.com/https://openapi.etsy.com/v2/shops/BentlyskunkworksShop/listings/active?method=GET&api_key=${etsyAPI}&fields=title,price,url&limit=100&includes=MainImage`
+      `https://openapi.etsy.com/v2/shops/BentlyskunkworksShop/listings/active?method=GET&api_key=${etsyAPI}&fields=title,price,url&limit=100&includes=MainImage`
     );
 
-    const data = await response.json();
-    const itemArray = data.results;
+    const itemArray = data_parsed.results;
     for (item of itemArray) {
       const { title, url, sku, MainImage, price } = item;
       itemDB.push(new Item(title, url, sku, MainImage.url_170x135, price));
