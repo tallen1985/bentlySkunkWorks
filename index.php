@@ -158,7 +158,7 @@
       }
 
       const getDB = async () => {
-        let data = "<?php echo $data; ?>";
+        let data = '<?php echo $data; ?>';
         let data_parsed = JSON.parse(data);
         itemDB = [];
 

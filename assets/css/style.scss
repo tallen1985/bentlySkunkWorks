@@ -1,0 +1,169 @@
+@import "normalize";
+
+@mixin tablet {
+  @media screen and(min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin max-wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@mixin setFont {
+  font-family: "Railway", sans-serif;
+}
+
+.navbar-nav {
+  @include setFont;
+  font-size: 2rem;
+  padding: 0 30px;
+
+  li {
+    padding: 0 10px;
+  }
+  .dropdown-item {
+    font-size: 2rem;
+  }
+}
+.navbar-brand {
+  @include setFont;
+  font-size: 2rem;
+  padding: 0 30px;
+}
+
+main {
+  @include max-wrap;
+
+  .header {
+    padding-top: 3em;
+    text-align: center;
+    margin-bottom: 5em;
+    > .content {
+      margin: 0 auto;
+      display: inline-grid;
+      align-items: center;
+      @include tablet {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+      }
+      .image {
+        text-align: right;
+        margin-bottom: 2em;
+        img {
+          border-radius: 30px;
+          width: 100%;
+          max-width: 500px;
+          box-shadow: 3px 3px 3px darkslategrey;
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .infoBox {
+          text-align: center;
+          width: max-content;
+          padding: 2em 3em;
+          border-top: 2px solid black;
+          border-bottom: 2px solid black;
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .featuredProducts {
+    > .content {
+      @include max-wrap;
+      @include setFont;
+      text-align: center;
+      margin-bottom: 3em;
+
+      h2 {
+        margin: 0 auto;
+        display: inline-block;
+        justify-content: center;
+        font-size: 2.5rem;
+        background: #fff;
+        padding: 0 3em 1em;
+        margin-bottom: 2em;
+        border-bottom: 2px solid black;
+      }
+
+      .imageBox {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        flex-wrap: wrap;
+
+        .item {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          margin-bottom: 2em;
+          img {
+            border-radius: 15px;
+          }
+          button {
+            position: absolute;
+            @include setFont;
+            font-size: 2rem;
+            margin-bottom: 2em;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    @include max-wrap;
+    @include setFont;
+    background-color: rgba(32, 178, 171, 0.3);
+    > .content {
+      padding: 2em 30px;
+
+      @include tablet {
+        margin: 0 auto;
+        width: 70%;
+      }
+      h2 {
+        margin: 0 auto;
+        display: block;
+        justify-content: flex-start;
+        font-size: 2.5rem;
+        padding: 0 0 1em;
+        margin-bottom: 2em;
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+
+  .photo-section {
+    > .content {
+      @include max-wrap;
+      padding: 0 30px;
+      margin: 0 auto 3em;
+
+      display: grid;
+      @include tablet {
+        grid-template-columns: 35% 1fr;
+        column-gap: 30px;
+      }
+    }
+  }
+  footer {
+    background-color: lightseagreen;
+    padding: 1em 30px;
+    @include max-wrap;
+    @include tablet {
+      text-align: center;
+    }
+  }
+}
