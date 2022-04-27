@@ -402,11 +402,16 @@ main .header > .content .image {
 }
 
 main .header > .content .image img {
-  border-radius: 30px;
   width: 100%;
-  max-width: 500px;
-  -webkit-box-shadow: 3px 3px 3px darkslategrey;
-          box-shadow: 3px 3px 3px darkslategrey;
+}
+
+@media screen and (min-width: 900px) {
+  main .header > .content .image img {
+    border-radius: 30px;
+    max-width: 500px;
+    -webkit-box-shadow: 3px 3px 3px darkslategrey;
+            box-shadow: 3px 3px 3px darkslategrey;
+  }
 }
 
 main .header > .content .info {

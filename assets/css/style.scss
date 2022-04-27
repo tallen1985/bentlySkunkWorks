@@ -50,10 +50,13 @@ main {
         text-align: right;
         margin-bottom: 2em;
         img {
-          border-radius: 30px;
+          @include tablet {
+            border-radius: 30px;
+            max-width: 500px;
+            box-shadow: 3px 3px 3px darkslategrey;
+          }
+
           width: 100%;
-          max-width: 500px;
-          box-shadow: 3px 3px 3px darkslategrey;
         }
       }
       .info {
