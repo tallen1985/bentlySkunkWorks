@@ -34,8 +34,6 @@
 }
 
 main {
-  @include max-wrap;
-
   .header {
     padding-top: 3em;
     text-align: center;
@@ -123,7 +121,7 @@ main {
   }
 
   .about {
-    @include max-wrap;
+    width: 100%;
     @include setFont;
     background-color: rgba(32, 178, 171, 0.3);
     > .content {
@@ -161,9 +159,12 @@ main {
   footer {
     background-color: lightseagreen;
     padding: 1em 30px;
-    @include max-wrap;
+    width: 100%;
     @include tablet {
       text-align: center;
+    }
+    p {
+      @include max-wrap;
     }
   }
 }

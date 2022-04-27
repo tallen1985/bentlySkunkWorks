@@ -372,11 +372,6 @@ button {
   padding: 0 30px;
 }
 
-main {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 main .header {
   padding-top: 3em;
   text-align: center;
@@ -508,8 +503,7 @@ main .featuredProducts > .content .imageBox .item button {
 }
 
 main .about {
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
   font-family: "Railway", sans-serif;
   background-color: rgba(32, 178, 171, 0.3);
 }
@@ -558,13 +552,17 @@ main .photo-section > .content {
 main footer {
   background-color: lightseagreen;
   padding: 1em 30px;
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 900px) {
   main footer {
     text-align: center;
   }
+}
+
+main footer p {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
