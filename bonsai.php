@@ -106,9 +106,9 @@ session_start();
             <?php
             foreach($items->results as $item) {
               if ((explode("-",$item->sku[0]))[0] == "BP") {
-                echo "<div class='item'>
-                <img src=".$item->MainImage->url_570xN." />
-                <h3>$item->title</h3>
+                echo "<a href=".$item->url." target='_blank'><div class='item'>
+                <img height='380' src=".$item->MainImage->url_570xN." />
+                <h3>$item->title</h3></a>
               </div>";
               };
             }
