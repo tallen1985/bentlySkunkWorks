@@ -36,7 +36,7 @@ session_start();
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bently Skunk Works</a>
+        <a class="navbar-brand" href="/">Bently Skunk Works</a>
         <button
           class="navbar-toggler"
           type="button"

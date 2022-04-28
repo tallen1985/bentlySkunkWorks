@@ -5,7 +5,6 @@ session_start();
     if (!isset($_SESSION["data"])) {
       $data = file_get_contents("https://openapi.etsy.com/v2/shops/BentlyskunkworksShop/listings/active?method=GET&api_key=r645z2pvk8ptxcr6dz8y0oqp&fields=title,price,url&limit=100&includes=MainImage");
       $_SESSION["data"] = $data;
-      echo "pulled Data";
     } else {
       $data = $_SESSION["data"];
     }
@@ -36,7 +35,7 @@ session_start();
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bently Skunk Works</a>
+        <a class="navbar-brand" href="/">Bently Skunk Works</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -118,7 +117,7 @@ session_start();
         </div>
       </div>
 
-      <div class="about">
+      <div class="about" id="about">
         <div class="content">
           <h2>About</h2>
           <h3>
