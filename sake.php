@@ -1,3 +1,17 @@
+<?php 
+
+session_start();
+
+    if (!isset($_SESSION["data"])) {
+      $data = file_get_contents("https://openapi.etsy.com/v2/shops/BentlyskunkworksShop/listings/active?method=GET&api_key=r645z2pvk8ptxcr6dz8y0oqp&fields=title,price,url&limit=100&includes=MainImage");
+      $_SESSION["data"] = $data;
+      echo "pulled Data";
+    } else {
+      $data = $_SESSION["data"];
+    }
+    
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +31,7 @@
       crossorigin="anonymous"
     />
     <link href="assets/css/style.css" rel="stylesheet" />
-    <title>Bently Skunk Works - Locally made pottery</title>
+    <title>Sake Sets | Bently Skunk Works | Locally made pottery</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -37,7 +51,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -55,8 +69,8 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Bonsai Pots</a></li>
-                <li><a class="dropdown-item" href="#">Drinkware</a></li>
+                <li><a class="dropdown-item" href="/bonsai.php">Bonsai Pots</a></li>
+                <li><a class="dropdown-item" href="/sake.php">Sake Kits</a></li>
                 <li>
                   <a class="dropdown-item" href="#">Misc Cool Stuff</a>
                 </li>
@@ -73,12 +87,12 @@
       <div class="header">
         <div class="content">
           <div class="image">
-            <img src="assets/img/palm-tree.jpg" />
+            <img src="assets/img/sake.jpg" />
           </div>
           <div class="info">
             <div class="infoBox">
               <h1>Bently Skunk Works</h1>
-              <p>A division of Purple Flamingo Pottery</p>
+              <p>Sake Sets</p>
             </div>
           </div>
         </div>
