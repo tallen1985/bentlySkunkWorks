@@ -131,6 +131,7 @@ main {
             @include mobile {
               width: 100%;
               max-width: none;
+              border-radius: none;
             }
           }
           h3,

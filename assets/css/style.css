@@ -516,6 +516,7 @@ main .featuredProducts > .content .imageBox .item img {
   main .featuredProducts > .content .imageBox .item img {
     width: 100%;
     max-width: none;
+    border-radius: none;
   }
 }
 
