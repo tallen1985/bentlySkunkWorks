@@ -495,8 +495,6 @@ main .featuredProducts > .content .imageBox a:hover {
 main .featuredProducts > .content .imageBox .item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: ()[1fr];
-      grid-template-columns: repeat(1fr);
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -505,6 +503,15 @@ main .featuredProducts > .content .imageBox .item {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 2em;
+  padding: 0 30px;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  main .featuredProducts > .content .imageBox .item {
+    -ms-grid-columns: ()[1fr];
+        grid-template-columns: repeat(1fr);
+  }
 }
 
 main .featuredProducts > .content .imageBox .item img {
@@ -515,8 +522,6 @@ main .featuredProducts > .content .imageBox .item img {
 
 @media screen and (max-width: 899px) {
   main .featuredProducts > .content .imageBox .item img {
-    width: 100%;
-    max-width: none;
     border-radius: none;
   }
 }

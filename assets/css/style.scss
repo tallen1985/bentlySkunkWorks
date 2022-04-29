@@ -120,18 +120,21 @@ main {
         }
         .item {
           display: grid;
-          grid-template-columns: repeat(1fr);
+          @include tablet {
+            grid-template-columns: repeat(1fr);
+          }
+
           position: relative;
           align-items: center;
           justify-content: flex-end;
           margin-bottom: 2em;
+          padding: 0 30px;
+          width: 100%;
           img {
             border-radius: 15px;
             max-width: 350px;
             overflow: hidden;
             @include mobile {
-              width: 100%;
-              max-width: none;
               border-radius: none;
             }
           }
