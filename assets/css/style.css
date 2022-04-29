@@ -466,9 +466,9 @@ main .featuredProducts > .content h2 {
 }
 
 main .featuredProducts > .content .imageBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -478,15 +478,26 @@ main .featuredProducts > .content .imageBox {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 900px) {
+  main .featuredProducts > .content .imageBox {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main .featuredProducts > .content .imageBox a:hover {
+  text-decoration: underline;
+}
+
 main .featuredProducts > .content .imageBox .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ()[1fr];
+      grid-template-columns: repeat(1fr);
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -498,13 +509,22 @@ main .featuredProducts > .content .imageBox .item {
 
 main .featuredProducts > .content .imageBox .item img {
   border-radius: 15px;
+  max-width: 350px;
 }
 
-main .featuredProducts > .content .imageBox .item button {
-  position: absolute;
+@media screen and (max-width: 899px) {
+  main .featuredProducts > .content .imageBox .item img {
+    width: 100%;
+    max-width: none;
+    border-radius: none;
+  }
+}
+
+main .featuredProducts > .content .imageBox .item h3,
+main .featuredProducts > .content .imageBox .item h4 {
   font-family: "Railway", sans-serif;
-  font-size: 2rem;
-  margin-bottom: 2em;
+  margin: 1em auto;
+  color: #000;
 }
 
 main .about {

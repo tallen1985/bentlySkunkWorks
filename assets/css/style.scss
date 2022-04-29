@@ -5,6 +5,11 @@
     @content;
   }
 }
+@mixin mobile {
+  @media screen and (max-width: 899px) {
+    @content;
+  }
+}
 
 @mixin max-wrap {
   max-width: 1400px;
@@ -97,26 +102,43 @@ main {
       }
 
       .imageBox {
-        display: flex;
+        display: grid;
+        width: 100%;
+        @include tablet {
+          @include max-wrap;
+          display: flex;
+        }
+
         justify-content: center;
         column-gap: 30px;
         flex-wrap: wrap;
 
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
         .item {
-          display: flex;
+          display: grid;
+          grid-template-columns: repeat(1fr);
           position: relative;
-          flex-direction: column;
           align-items: center;
           justify-content: flex-end;
           margin-bottom: 2em;
           img {
             border-radius: 15px;
+            max-width: 350px;
+            @include mobile {
+              width: 100%;
+              max-width: none;
+              border-radius: none;
+            }
           }
-          button {
-            position: absolute;
-            @include setFont;
-            font-size: 2rem;
-            margin-bottom: 2em;
+          h3,
+          h4 {
+            @include setFont();
+            margin: 1em auto;
+            color: #000;
           }
         }
       }
