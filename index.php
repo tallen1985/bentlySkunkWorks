@@ -109,6 +109,10 @@ session_start();
               <img src="assets/img/sake.jpg" />
               <a href="/sake.php" class="btn btn-dark">Sake Sets</a>
             </div>
+            <div class="item">
+              <img src="assets/img/jumbotron.jpeg" />
+              <a href="/other.php" class="btn btn-dark">Other Cool Stuff</a>
+            </div>
           </div>
         </div>
       </div>
