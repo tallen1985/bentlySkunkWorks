@@ -1,5 +1,5 @@
 <?php 
-             $data = file_get_contents("https://openapi.etsy.com/v2/shops/BentlyskunkworksShop/listings/active?method=GET&api_key=r645z2pvk8ptxcr6dz8y0oqp&fields=title,price,url&limit=100&includes=MainImage");
+             $data = file_get_contents("https://openapi.etsy.com/v2/shops/BentlySkunkworksShop/listings/active?method=GET&api_key=r645z2pvk8ptxcr6dz8y0oqp&fields=title,price,url&limit=100&includes=MainImage");
  ?>
 
 <!DOCTYPE html>
@@ -21,14 +21,14 @@
       crossorigin="anonymous"
     />
     <link href="assets/css/style.css" rel="stylesheet" />
-    <title>Bently Skunk Works - Locally made pottery</title>
+    <title>Bently Skunkworks - Locally made pottery</title>
   </head>
   <body class="bg-white">
     <main class="text-center">
       <section id="jumbotron">
         <nav class="navbar">
           <div class="container-fluid">
-            <a class="navbar-brand text-dark" href="#"> Bently Skunk Works </a>
+            <a class="navbar-brand text-dark" href="#"> Bently Skunkworks </a>
           </div>
         </nav>
         <div class="h-100 w-100 d-flex justify-content-center">
@@ -124,7 +124,7 @@
         </div>
       </section>
       <section class="footer">
-        <p>Copyright 2021 - Bently Skunk Works</p>
+        <p>Copyright 2021 - Bently Skunkworks</p>
       </section>
     </main>
     <div

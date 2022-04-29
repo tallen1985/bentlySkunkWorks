@@ -3,7 +3,7 @@
 session_start();
 
     if (!isset($_SESSION["data"])) {
-      $data = file_get_contents("https://openapi.etsy.com/v2/shops/BentlyskunkworksShop/listings/active?method=GET&api_key=r645z2pvk8ptxcr6dz8y0oqp&fields=title,price,url&limit=100&includes=MainImage");
+      $data = file_get_contents("https://openapi.etsy.com/v2/shops/BentlySkunkworksShop/listings/active?method=GET&api_key=r645z2pvk8ptxcr6dz8y0oqp&fields=title,price,url&limit=100&includes=MainImage");
       $_SESSION["data"] = $data;
       echo "pulled Data";
     } else {
@@ -31,12 +31,12 @@ session_start();
       crossorigin="anonymous"
     />
     <link href="assets/css/style.css" rel="stylesheet" />
-    <title>Sake Sets | Bently Skunk Works | Locally made pottery</title>
+    <title>Sake Sets | Bently Skunkworks | Locally made pottery</title>
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Bently Skunk Works</a>
+        <a class="navbar-brand" href="/">Bently Skunkworks</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -77,7 +77,7 @@ session_start();
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#about">About Bently Skunk Works</a>
+              <a class="nav-link" href="/#about">About Bently Skunkworks</a>
             </li>
           </ul>
         </div>
@@ -91,7 +91,7 @@ session_start();
           </div>
           <div class="info">
             <div class="infoBox">
-              <h1>Bently Skunk Works</h1>
+              <h1>Bently Skunkworks</h1>
               <p>Sake Sets</p>
             </div>
           </div>
@@ -101,7 +101,7 @@ session_start();
       <h2 style="text-align:center;">Products Coming Soon!</h2>
 
       <footer>
-        <p>&copy 2022 - Bently Skunk Works</p>
+        <p>&copy 2022 - Bently Skunkworks</p>
       </footer>
     </main>
     <script

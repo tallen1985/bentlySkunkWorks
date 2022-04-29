@@ -37,7 +37,12 @@
   font-size: 2rem;
   padding: 0 30px;
 }
-
+.navbar-toggler-icon {
+  font-size: 2.5em;
+}
+.navbar-toggler {
+  padding: 0.25rem 1.25rem;
+}
 main {
   .header {
     padding-top: 3em;
@@ -54,14 +59,15 @@ main {
       .image {
         text-align: right;
         margin-bottom: 2em;
+        box-shadow: none;
         img {
           @include tablet {
             border-radius: 30px;
             max-width: 500px;
             box-shadow: 3px 3px 3px darkslategrey;
           }
-
-          width: 100%;
+          object-fit: scale-down;
+          max-width: 100%;
         }
       }
       .info {
@@ -72,7 +78,7 @@ main {
         .infoBox {
           text-align: center;
           width: max-content;
-          padding: 2em 3em;
+          padding: 2em 2em;
           border-top: 2px solid black;
           border-bottom: 2px solid black;
           p {

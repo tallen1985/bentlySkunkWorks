@@ -372,6 +372,14 @@ button {
   padding: 0 30px;
 }
 
+.navbar-toggler-icon {
+  font-size: 2.5em;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 1.25rem;
+}
+
 main .header {
   padding-top: 3em;
   text-align: center;
@@ -399,10 +407,14 @@ main .header > .content {
 main .header > .content .image {
   text-align: right;
   margin-bottom: 2em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 main .header > .content .image img {
-  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 900px) {
@@ -435,7 +447,7 @@ main .header > .content .info .infoBox {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 2em 3em;
+  padding: 2em 2em;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
