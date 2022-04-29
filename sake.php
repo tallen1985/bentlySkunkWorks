@@ -34,7 +34,7 @@ session_start();
     <title>Sake Sets | Bently Skunk Works | Locally made pottery</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">Bently Skunk Works</a>
         <button
@@ -69,15 +69,15 @@ session_start();
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="/bonsai.php">Bonsai Pots</a></li>
+              <li><a class="dropdown-item" href="/bonsai.php">Bonsai Pots</a></li>
                 <li><a class="dropdown-item" href="/sake.php">Sake Kits</a></li>
-                <li>
+                <!-- <li>
                   <a class="dropdown-item" href="#">Misc Cool Stuff</a>
-                </li>
+                </li> -->
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Bently Skunk Works</a>
+              <a class="nav-link" href="/#about">About Bently Skunk Works</a>
             </li>
           </ul>
         </div>

@@ -70,13 +70,13 @@ session_start();
               >
               <li><a class="dropdown-item" href="/bonsai.php">Bonsai Pots</a></li>
                 <li><a class="dropdown-item" href="/sake.php">Sake Kits</a></li>
-                <li>
+                <!-- <li>
                   <a class="dropdown-item" href="#">Misc Cool Stuff</a>
-                </li>
+                </li> -->
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Bently Skunk Works</a>
+              <a class="nav-link" href="/#about">About Bently Skunk Works</a>
             </li>
           </ul>
         </div>
