@@ -504,7 +504,6 @@ main .featuredProducts > .content .imageBox .item {
           justify-content: flex-end;
   margin-bottom: 2em;
   padding: 0 30px;
-  width: 100%;
 }
 
 @media screen and (min-width: 900px) {
