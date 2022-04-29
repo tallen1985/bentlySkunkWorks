@@ -517,7 +517,6 @@ main .featuredProducts > .content .imageBox .item {
 main .featuredProducts > .content .imageBox .item img {
   border-radius: 15px;
   max-width: 350px;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 899px) {
