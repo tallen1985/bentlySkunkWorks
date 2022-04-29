@@ -103,15 +103,11 @@ session_start();
           <div class="imageBox">
             <div class="item">
               <img src="assets/img/BSWC1.jpg" />
-              <button class="btn btn-dark">Check out</button>
+              <a href="/bonsai.php" class="btn btn-dark">Bonsai Collection</a>
             </div>
             <div class="item">
               <img src="assets/img/BSWC1.jpg" />
-              <button class="btn btn-dark">Check out</button>
-            </div>
-            <div class="item">
-              <img src="assets/img/BSWC1.jpg" />
-              <button class="btn btn-dark">Check out</button>
+              <a href="/sake.php" class="btn btn-dark">Sake Sets</a>
             </div>
           </div>
         </div>

@@ -527,6 +527,16 @@ main .featuredProducts > .content .imageBox .item h4 {
   color: #000;
 }
 
+main .featuredProducts > .content .imageBox .item a {
+  position: relative;
+  top: -70px;
+  margin: 0 auto;
+  font-size: 2.4rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 main .about {
   width: 100%;
   font-family: "Railway", sans-serif;
