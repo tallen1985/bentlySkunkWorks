@@ -5,7 +5,6 @@ session_start();
     if (!isset($_SESSION["data"])) {
       $data = file_get_contents("https://openapi.etsy.com/v2/shops/BentlySkunkworksShop/listings/active?method=GET&api_key=r645z2pvk8ptxcr6dz8y0oqp&fields=title,price,url&limit=100&includes=MainImage");
       $_SESSION["data"] = $data;
-      echo "pulled Data";
     } else {
       $data = $_SESSION["data"];
     }
