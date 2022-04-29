@@ -128,6 +128,7 @@ main {
           img {
             border-radius: 15px;
             max-width: 350px;
+            overflow: hidden;
             @include mobile {
               width: 100%;
               max-width: none;

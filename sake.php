@@ -98,41 +98,8 @@ session_start();
         </div>
       </div>
 
-      <div class="featuredProducts">
-        <div class="content">
-          <h2>Featured Products</h2>
-          <div class="imageBox">
-            <div class="item">
-              <img src="assets/img/BSWC1.jpg" />
-              <button class="btn btn-dark">Check out</button>
-            </div>
-            <div class="item">
-              <img src="assets/img/BSWC1.jpg" />
-              <button class="btn btn-dark">Check out</button>
-            </div>
-            <div class="item">
-              <img src="assets/img/BSWC1.jpg" />
-              <button class="btn btn-dark">Check out</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h2 style="text-align:center;">Products Coming Soon!</h2>
 
-      <div class="about">
-        <div class="content">
-          <h2>About</h2>
-          <h3>
-            The Skunkworks were born due to a budding of a professional shop in
-            Dallas Texas. The purpose is to allow a creative culprit an outlet
-            in clay. Bently Skunkworks is a complete shop with a Skutt electric
-            kiln and Shimpo wheel. Here we are creating products using
-            traditional methods and raw materials. However the design and
-            finished products come from a woodworkers mind. Utilizing little
-            guidance from seasoned potters, we hope you find our wares
-            refreshing, useful and beautiful additions to your home.
-          </h3>
-        </div>
-      </div>
       <footer>
         <p>&copy 2022 - Bently Skunk Works</p>
       </footer>

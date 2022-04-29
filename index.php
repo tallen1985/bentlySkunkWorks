@@ -102,11 +102,11 @@ session_start();
           <h2>Featured Products</h2>
           <div class="imageBox">
             <div class="item">
-              <img src="assets/img/BSWC1.jpg" />
+              <img src="assets/img/bonsai.jpg" />
               <a href="/bonsai.php" class="btn btn-dark">Bonsai Collection</a>
             </div>
             <div class="item">
-              <img src="assets/img/BSWC1.jpg" />
+              <img src="assets/img/sake.jpg" />
               <a href="/sake.php" class="btn btn-dark">Sake Sets</a>
             </div>
           </div>
