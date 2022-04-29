@@ -71,9 +71,9 @@ session_start();
               >
               <li><a class="dropdown-item" href="/bonsai.php">Bonsai Pots</a></li>
                 <li><a class="dropdown-item" href="/sake.php">Sake Kits</a></li>
-                <!-- <li>
-                  <a class="dropdown-item" href="#">Misc Cool Stuff</a>
-                </li> -->
+                <li>
+                  <a class="dropdown-item" href="/other.php">Misc Cool Stuff</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">

@@ -93,7 +93,7 @@ session_start();
           <div class="info">
             <div class="infoBox">
               <h1>Bently Skunk Works</h1>
-              <p>Bonsai Pots</p>
+              <p>Other Cool Stuff</p>
             </div>
           </div>
         </div>
@@ -105,7 +105,8 @@ session_start();
           <div class="imageBox">
             <?php
             foreach($items->results as $item) {
-              if ((explode("-",$item->sku[0]))[0] == "BP") {
+              $productCode = explode("-",$item->sku[0])[0];
+              if ($productCode !== "BP" AND $productCode !== "SS") {
                 echo "<a href=".$item->url." target='_blank'><div class='item'>
                 <img src=".$item->MainImage->url_570xN." />
                 <h3>$item->title</h3>
