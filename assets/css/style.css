@@ -515,8 +515,9 @@ main .featuredProducts > .content .imageBox .item img {
 @media screen and (max-width: 899px) {
   main .featuredProducts > .content .imageBox .item img {
     width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
     max-width: none;
-    border-radius: none;
   }
 }
 
