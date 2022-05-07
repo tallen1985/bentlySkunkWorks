@@ -7,6 +7,7 @@ session_start();
       $_SESSION["data"] = $data;
     } else {
       $data = $_SESSION["data"];
+      $items = json_decode($data);
     }
     
  ?>
